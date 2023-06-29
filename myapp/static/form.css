@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Nunito+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+.container{
+    margin-top: 1rem;
+    width: 40%;
+    border-radius: 10px;
+    height: 90vh;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat(13,1fr);
+    grid-row-end: 12;
+    place-content: center;
+    position: relative;
+
+}
+form > label{
+    margin: 15px;
+    height: 3rem;
+    padding: 10px;
+    place-content: center;
+    position: relative;
+
+
+}
+form > input,select{
+    border-radius: 3px;
+    margin: 10px;
+    width:100%;
+    height: 3rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form > input[type=submit]{
+    border: 1px solid black;
+    background-color: rgb(54, 111, 223);
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 2rem;
+    font: 1.5rem bold ;
+    place-content: center;
+}
+input[type=submit]:hover {
+    filter: brightness(130%);
+ }
+@media screen and (max-width: 600px) {
+    form{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 13fr;
+    }
+    form>input,select{
+        place-content: center;
+    }
+}

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel='stylesheet' href="{% static 'admin.css' %}">
+    
+</head>
+<body>
+    <section class="table">
+        <table>
+            <thead>
+                <tr class="cement">
+                    <td class="sky">Item/Customer</td>
+                    <td>Customer1</td>
+                    <td>Customer2</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="grey">
+                    <td class="sandal">Quantity</td>
+                    <td>{{sumQ1}}</td>
+                    <td>{{sumQ2}}</td>
+                    <td>{{totalQ}}</td>
+                </tr>
+                <tr class="sky">
+                    <td class="sandal">Weight</td>
+                    <td>{{sumW1}}</td>
+                    <td>{{sumW2}}</td>
+                    <td>{{totalW}}</td>
+                </tr>
+                <tr class="grey">
+                    <td class="sandal">Box Count</td>
+                    <td>{{sumB1}}</td>
+                    <td>{{sumB2}}</td>
+                    <td>{{totalB}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
